@@ -3,16 +3,18 @@
 
 def wait_for_instruction():
     j = int(input('Введите число:'))
+    print()
     return j
 
 def show_menu():
+    print()
     print('1. Вывести список задач')
     print('2. Добавить задачу')
     print('3. Отредактировать задачу')
     print('4. Завершить задачу')
     print('5. Начать задачу сначала')
     print('6. Выход')
-    
+    print()
     return wait_for_instruction()
 
 
