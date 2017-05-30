@@ -24,8 +24,8 @@ def convert_from_decimal(num, i):
         part = int(num % i)                 # находим остаток
         #print(part, type(part))
         num = int((num - part) / i)         # реализация алгоритма - получение нового числа
-        if part in let_dict2():             # проверка необходимости замены числа на букву - для системы с основанием > 10
-            part = let_dict2.get(part)
+        if part in let_dict2:             # проверка необходимости замены числа на букву - для системы с основанием > 10
+            part = let_dict2.get(str(part))
         new_num.append(str(part))           # добавление в список остатков остатка в формате строки
         #print('num =', num)
     if num != 0:                            # если num меньше базы но больше нуля - добавляем в список остатков в формате строки
